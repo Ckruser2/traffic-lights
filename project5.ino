@@ -133,7 +133,8 @@ digitalWrite(westGreen, LOW);
          digitalWrite(eastYellow, HIGH);
          delay(changeDelay);
          digitalWrite(eastYellow, LOW);
-         digitalWrite(eastRed, HIGH);
+         digitalWrite(eastRed, HIGH);// change east-facing lights from red
+                                   // to pedestrian light
          delay(changeDelay); 
          for ( int a = 0; a < 5; a++ ) // blink yellow light
          {
@@ -144,10 +145,8 @@ digitalWrite(westGreen, LOW);
         }
        digitalWrite(westYellow, LOW);
        digitalWrite(westRed, HIGH); // change west-facing lights from red
-                                   // to green
+                                   // to pedestrian light
        digitalWrite(pedLight, HIGH); 
        }
 }
-
-   
-   }
+}
